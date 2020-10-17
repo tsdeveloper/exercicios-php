@@ -1,23 +1,33 @@
 <?php
 
+/**
+ * Interface Cadastro
+ */
 interface Cadastro {
    public function registerName();
 }
 
-
+/**
+ * Class Pessoa
+ */
 class Pessoa implements Cadastro{
 
     public  $name;
     private $data;
 
-
+    /**
+     * return implements
+     */
     public function registerName()
     {
-        echo "Seja bem vindo(a) ao curso de PHP"."";
+        echo "Seja bem vindo(a) ao curso de PHP";
     }
 
 
-
+    /**
+     * @param $name
+     * @param $value
+     */
     public function __set($name, $value)
     {
         $this->notFound(__FUNCTION__, $name);
@@ -25,6 +35,10 @@ class Pessoa implements Cadastro{
 
     }
 
+    /**
+     * @param $name
+     * @return mixed
+     */
     public function __get($name)
     {
 
@@ -36,7 +50,10 @@ class Pessoa implements Cadastro{
         }
     }
 
-
+    /**
+     * @param $method
+     * @param $name
+     */
     private function notFound($method, $name){
 
         echo  "<p> A propriedade ($name} não existe em " .__CLASS__."</p>";
