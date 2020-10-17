@@ -7,9 +7,5 @@
 
 
     $user->registerName();
-    echo" {$user->getName()}</BR>";
-
-    $user->setName("Gabriel");
-    $user->registerName();
-    echo" {$user->getName()}";
+    echo" $user->name";
 

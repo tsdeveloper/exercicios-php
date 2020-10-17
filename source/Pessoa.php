@@ -23,16 +23,16 @@ class Pessoa implements Cadastro{
         echo "Seja bem vindo(a) ao curso de PHP";
     }
 
-    public function setName($name){
-        $this->name =$name;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getName(){
-        return $this->name;
-    }
+//    public function setName($name){
+//        $this->name =$name;
+//    }
+//
+//    /**
+//     * @return mixed
+//     */
+//    public function getName(){
+//        return $this->name;
+//    }
 
 
     /**
