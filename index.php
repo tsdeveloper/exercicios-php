@@ -3,9 +3,9 @@
     require_once __DIR__."/source/Pessoa.php";
 
     $user = new Pessoa();
-    $user->name = "Santos";
+    $user->name = "Yuri do Monte";
 
 
-    $user->registerName();
-    echo" $user->name";
 
+
+  echo "{$user->registerName()} {$user->name}</p>";
